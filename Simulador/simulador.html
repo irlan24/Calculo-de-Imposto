@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ponto de cabeçalho e confecções-->
+    <header>
+        <h1> Simulador de rendimentos</h1>
+    </header>
+        
+
+    <!-- Ponto central-->
+    <section>
+
+        <!--Primeira DIV-->
+        <div>
+            <!--<p>A taxa atual de cdi, pode ser uma const</p>
+            <p>Capital inicial investido</p>
+            <p>capital aplicado mensal ( base 30 dias )</p>
+            <p>quantos meses irei aplicar esse valor</p>-->
+
+            <p>Taxa CDI atual: 
+                <input type="number" id="selic" min="1" placeholder="Taxa atual 13,65" style="width: 180px;"> % ao ano</p>
+            <p>Imposto de renda: 
+                <input type="radio" name="txtradios" id="txt25" value="22.5" checked> 22.5% <input type="radio" name="txtradios" id="txt22" value="20"> 20%
+                <input type="radio" name="txtradios" id="txt20" value="17.5"> 17.5% </p>
+            <p>Capital inicial: 
+                R$ <input type="number" id="capInicial" min="0" style="width: 100px;"> Reais</p>
+            <p>Investimento mensal:  
+               R$ <input type="number" id="capMensal" min="0" style="width: 100px;"> Reais</p>
+            <p>Tempo guardado: 
+                <input type="radio" name="tempo" id="mes" value="mes"> Mês <input type="radio" name="tempo" id="ano" value="ano" checked> Ano
+                <input type="number" id="capTempo" min="1" style="width: 100px;"></p>
+
+            <input type="button" id="validador" value="Simular" onclick="validador()">
+
+
+
+
+        </div>
+        
+
+        <!--Segunda DIV-->
+        <div id="res">
+            
+
+        </div>
+
+    </section>
+
+    <!-- Ponto de rodapé-->
+    <footer>   
+        Insta: @nonato_irlan
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
