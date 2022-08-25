@@ -3,6 +3,7 @@ let juros = 13.65
 let tempo = 1
 let mensal = 100
 
+/*
 console.log(jurosComposto( capital, (juros/100)/12 , tempo*12, mensal))
 
 function jurosComposto (c, i,t, a){
@@ -16,12 +17,17 @@ function jurosComposto (c, i,t, a){
 
     return Montante
 
+}*/
+
+
+
+function jurosAporteMes (a, i, t){
+    let conversao = (1 + i)**(t/12)-1
+    let aporte = (a*((1+conversao)**t-1) / conversao) * (1+conversao**1)
+
+    return aporte
 }
-
-
-
-
-
+console.log (jurosAporteMes(mensal, juros/100, tempo))
 
 
 /*
